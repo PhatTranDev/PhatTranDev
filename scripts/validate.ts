@@ -2,7 +2,7 @@ import { access, readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { generatedAssetNames } from '../src/generators/assets.js';
 
-const requiredSections = ['## Profile', '## Talents', '## Party Setup', '## Featured Projects', '## GitHub Activity'];
+const requiredSections = ['## About', '## Core Stack', '## Featured Projects', '## GitHub Activity'];
 
 export async function validate(root = process.cwd()): Promise<void> {
   const readme = await readFile(resolve(root, 'README.md'), 'utf8');

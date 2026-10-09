@@ -24,14 +24,3 @@ export function svgShell(height: number, title: string, body: string, extraDefs 
   ${body}
 </svg>\n`;
 }
-
-export function label(x: number, y: number, text: string, width?: number): string {
-  const w = width ?? Math.max(84, text.length * 8 + 28);
-  return `<g><rect x="${x}" y="${y - 20}" width="${w}" height="30" rx="15" fill="#2B334A" stroke="#44445E"/><text x="${x + w / 2}" y="${y}" text-anchor="middle" fill="#D8D5E5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">${escapeXml(text)}</text></g>`;
-}
-
-export function sectionHeading(kicker: string, title: string): string {
-  return `<text x="48" y="45" fill="#C9B58A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="3">${escapeXml(kicker.toUpperCase())}</text>
-  <text x="48" y="79" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="28">${escapeXml(title)}</text>
-  <rect x="48" y="96" width="904" height="2" rx="1" fill="url(#accent)" opacity=".65"/>`;
-}

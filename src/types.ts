@@ -5,7 +5,6 @@ export interface Profile {
   keywords: string[];
   summary: string;
   skills: Array<{ group: string; items: string[] }>;
-  party: Array<{ slot: string; technology: string; description: string }>;
   projects: Array<{ name: string; description: string; technologies: string[]; repository: string }>;
   github: { username: string };
   contact: Array<{ label: string; url: string }>;

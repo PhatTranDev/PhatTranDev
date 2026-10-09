@@ -9,7 +9,7 @@ const profile = JSON.parse(readFileSync(new URL('../data/profile.json', import.m
 describe('profile generator', () => {
   it('generates every SVG without unsupported GitHub content', () => {
     const output = generators(profile, process.cwd());
-    expect(Object.keys(output)).toHaveLength(7);
+    expect(Object.keys(output)).toEqual(['hero.svg', 'hero-static.svg']);
     for (const svg of Object.values(output)) {
       expect(svg).toMatch(/^<svg/); expect(svg).toMatch(/<\/svg>\n$/);
       expect(svg).not.toMatch(/<script\b|foreignObject/i);
@@ -24,5 +24,13 @@ describe('profile generator', () => {
 
   it('keeps unknown project repositories non-clickable', () => {
     expect(readme(profile)).not.toContain('](http');
+  });
+
+  it('keeps professional content available as readable Markdown', () => {
+    const output = readme(profile);
+    expect(output).toContain(profile.summary);
+    expect(output).toContain('## Core Stack');
+    expect(output).toContain('**Speech-Driven 3D Avatar**');
+    expect(output).not.toContain('Party Setup');
   });
 });

@@ -5,35 +5,41 @@
 
 </div>
 
-## Profile
+## About
 
-![Professional profile summary](assets/profile.svg)
+Master's student in Artificial Intelligence at National Central University, Taiwan. Interested in designing, building, and deploying practical intelligent systems, with a focus on LLM applications, agentic workflows, and production-oriented AI engineering.
 
-## Talents
+My current interests include LLMs, Agentic AI, MLOps, Deployment, retrieval-augmented systems, and reliable backend infrastructure for AI applications.
 
-![Technical skills grouped by discipline](assets/talents.svg)
+## Core Stack
 
-## Party Setup
-
-![Engineering stack represented as a compact party setup](assets/party-setup.svg)
+- **AI & Machine Learning** — `Python` · `PyTorch` · `Machine Learning` · `Deep Learning`
+- **LLM & Agentic Systems** — `LangGraph` · `RAG` · `Tool Integration` · `AI Workflows`
+- **Backend & Deployment** — `TypeScript` · `FastAPI` · `Docker` · `AWS` · `GitHub Actions`
 
 ## Featured Projects
 
-![Three featured AI engineering projects](assets/projects.svg)
+- **Speech-Driven 3D Avatar** — Audio-driven facial animation with emotion conditioning, 3D avatar animation, and deployment.
+  
+  `Speech AI` · `3D Animation` · `Deployment`
+
+- **Agentic AI & LLM Systems** — LLM applications, retrieval and tool-using workflows, agent orchestration, and deployment experiments.
+  
+  `LangGraph` · `RAG` · `Tool Use`
+
+- **Hakka Language Learning Platform** — AI-assisted language learning with speech recognition, translation, synthesis, and full-stack deployment.
+  
+  `ASR` · `Translation` · `TTS` · `Full Stack`
 
 ## GitHub Activity
 
-![GitHub activity panel](assets/achievements.svg)
+Public repositories, experiments, and contribution history are available directly from this GitHub profile.
 
-Repository links and contact details can be enabled in `data/profile.json` when ready.
+---
 
 <div align="center">
 
-<sub>Designing, building, and deploying practical intelligent systems.</sub>
-
-<br />
-
-<sub>Dream-themed portrait generated with OpenAI image generation tools; this repository does not include official HoYoverse artwork. See <a href="assets/ASSET_SOURCES.md">asset notes</a>.</sub>
+<sub>Designing, building, and deploying practical intelligent systems.<br />Dream-themed portrait generated with OpenAI image generation tools; no official HoYoverse artwork is included. <a href="assets/ASSET_SOURCES.md">Asset notes</a>.</sub>
 
 
 </div>
