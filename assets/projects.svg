@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
+  <title id="title">Featured Projects</title><desc id="desc">Featured Projects for Gia Phat's GitHub profile</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#222B40"/><stop offset="1" stop-color="#191F33"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A99BCB"/><stop offset=".55" stop-color="#D8A6BF"/><stop offset="1" stop-color="#C9B58A"/></linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+    
+  </defs>
+  <rect width="1000" height="390" rx="24" fill="#151B2D"/>
+  <rect x="1" y="1" width="998" height="388" rx="23" fill="none" stroke="#44445E"/>
+  <text x="48" y="45" fill="#C9B58A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="3">04 / SELECTED WORK</text>
+  <text x="48" y="79" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="28">Featured projects</text>
+  <rect x="48" y="96" width="904" height="2" rx="1" fill="url(#accent)" opacity=".65"/><g><rect x="48" y="125" width="282" height="235" rx="16" fill="url(#surface)" stroke="#44445E"/>
+      <text x="68" y="158" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">PROJECT 01</text>
+      <text x="68" y="189" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="18">Speech-Driven 3D Avatar</text>
+      <text x="68" y="245" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">Audio-driven facial animation</text><text x="68" y="265" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">with emotion conditioning, 3D</text><text x="68" y="285" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">avatar animation, and deployment.</text>
+      <text x="68" y="337" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">Speech AI  ·  3D Animation  ·  Deployment</text></g><g><rect x="354" y="125" width="282" height="235" rx="16" fill="url(#surface)" stroke="#44445E"/>
+      <text x="374" y="158" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">PROJECT 02</text>
+      <text x="374" y="189" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="18">Agentic AI &amp; LLM Systems</text>
+      <text x="374" y="245" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">LLM applications, retrieval and</text><text x="374" y="265" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">tool-using workflows, agent</text><text x="374" y="285" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">orchestration, and deployment</text>
+      <text x="374" y="337" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">LangGraph  ·  RAG  ·  Tool Use</text></g><g><rect x="660" y="125" width="282" height="235" rx="16" fill="url(#surface)" stroke="#44445E"/>
+      <text x="680" y="158" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">PROJECT 03</text>
+      <text x="680" y="189" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="18">Hakka Language Learning</text><text x="680" y="212" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="18">Platform</text>
+      <text x="680" y="245" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">AI-assisted language learning</text><text x="680" y="265" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">with speech recognition,</text><text x="680" y="285" fill="#B8BACB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">translation, synthesis, and</text>
+      <text x="680" y="337" fill="#A99BCB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">ASR  ·  Translation  ·  TTS  ·  Full Stack</text></g>
+</svg>

@@ -1,0 +1,28 @@
+name: Validate profile assets
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'data/profile.json'
+      - 'src/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package*.json'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - name: Ensure generated assets are current
+        run: git diff --exit-code -- README.md assets/*.svg
