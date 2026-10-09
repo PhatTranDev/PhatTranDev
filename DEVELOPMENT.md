@@ -1,13 +1,13 @@
 # Development guide
 
-This repository generates a compact GitHub Profile README and one cohesive hero visual from `data/profile.json`. The generated README is the deliverable; the local server is only a convenient browser preview.
+This repository generates a cohesive GitHub Profile README and a family of matching SVG panels from `data/profile.json`. The generated README is the deliverable; the local server is only a convenient browser preview.
 
 ## Structure
 
 - `data/profile.json` — identity, copy, skills, projects, optional links, and avatar metadata.
-- `src/generators/` — deterministic hero SVG and Markdown generators.
+- `src/generators/` — deterministic SVG panel and Markdown generators.
 - `src/utils/svg.ts` — shared theme tokens and safe SVG helpers.
-- `assets/` — the generated hero, portrait, static fallback, and source notes.
+- `assets/` — generated profile panels, portrait, static hero fallback, and source notes.
 - `scripts/` — build and compatibility validation.
 - `tests/` — generation and configuration propagation tests.
 
@@ -18,7 +18,7 @@ npm install
 npm run check
 ```
 
-`npm run check` type-checks, rebuilds, validates local references and GitHub-safe SVG constraints, then runs the Vitest suite. About, stack, projects, and activity remain real Markdown so the profile is readable when images are unavailable.
+`npm run check` type-checks, rebuilds, validates local references and GitHub-safe SVG constraints, then runs the Vitest suite. The README pairs each visual panel with concise Markdown so important content and links remain accessible when images are unavailable.
 
 ## Edit and rebuild
 

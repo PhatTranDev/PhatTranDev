@@ -6,8 +6,8 @@
     <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
     
   </defs>
-  <rect width="1000" height="360" rx="24" fill="#151B2D"/>
-  <rect x="1" y="1" width="998" height="358" rx="23" fill="none" stroke="#44445E"/>
+  <rect width="1000" height="360" rx="22" fill="#151B2D"/>
+  <rect x="1" y="1" width="998" height="358" rx="21" fill="none" stroke="#44445E"/>
   
     <style>
     .particle{animation:drift 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.p1{animation-delay:-2s}.p2{animation-delay:-4s}.p3{animation-delay:-6s}.halo{animation:breathe 7s ease-in-out infinite}

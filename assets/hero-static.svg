@@ -6,8 +6,8 @@
     <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
     
   </defs>
-  <rect width="1000" height="360" rx="24" fill="#151B2D"/>
-  <rect x="1" y="1" width="998" height="358" rx="23" fill="none" stroke="#44445E"/>
+  <rect width="1000" height="360" rx="22" fill="#151B2D"/>
+  <rect x="1" y="1" width="998" height="358" rx="21" fill="none" stroke="#44445E"/>
   
     <rect x="22" y="22" width="956" height="316" rx="20" fill="url(#surface)"/>
     <circle class="halo" cx="194" cy="180" r="148" fill="#D8A6BF" opacity=".2" filter="url(#softGlow)"/>

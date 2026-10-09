@@ -19,8 +19,17 @@ export function svgShell(height: number, title: string, body: string, extraDefs 
     <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
     ${extraDefs}
   </defs>
-  <rect width="1000" height="${height}" rx="24" fill="#151B2D"/>
-  <rect x="1" y="1" width="998" height="${height - 2}" rx="23" fill="none" stroke="#44445E"/>
+  <rect width="1000" height="${height}" rx="22" fill="#151B2D"/>
+  <rect x="1" y="1" width="998" height="${height - 2}" rx="21" fill="none" stroke="#44445E"/>
   ${body}
 </svg>\n`;
+}
+
+export function panelHeader(index: string, label: string, title: string): string {
+  return `<g>
+    <text x="42" y="38" fill="#C9B58A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="3">${escapeXml(index)} / ${escapeXml(label.toUpperCase())}</text>
+    <text x="42" y="72" fill="#F3EFF7" font-family="Georgia,Times New Roman,serif" font-size="27">${escapeXml(title)}</text>
+    <rect x="42" y="91" width="916" height="1.5" rx="1" fill="url(#accent)" opacity=".65"/>
+    <path d="M42 25h18M42 25v18M958 25h-18M958 25v18" fill="none" stroke="#C9B58A" opacity=".55"/>
+  </g>`;
 }

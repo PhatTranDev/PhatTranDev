@@ -9,6 +9,13 @@
     { "group": "LLM & Agentic Systems", "items": ["LangGraph", "RAG", "Tool Integration", "AI Workflows"] },
     { "group": "Backend & Deployment", "items": ["TypeScript", "FastAPI", "Docker", "AWS", "GitHub Actions"] }
   ],
+  "party": [
+    { "slot": "Main DPS", "technology": "Python", "description": "Core language for AI systems and experimentation." },
+    { "slot": "Sub DPS", "technology": "TypeScript", "description": "Typed interfaces and dependable application layers." },
+    { "slot": "Support", "technology": "FastAPI", "description": "Clean, production-minded model APIs." },
+    { "slot": "Utility", "technology": "Docker", "description": "Reproducible environments from laptop to cloud." },
+    { "slot": "Burst", "technology": "Agentic AI", "description": "Orchestrated tools, retrieval, and model workflows." }
+  ],
   "projects": [
     {
       "name": "Speech-Driven 3D Avatar",

@@ -9,7 +9,7 @@ const profile = JSON.parse(readFileSync(new URL('../data/profile.json', import.m
 describe('profile generator', () => {
   it('generates every SVG without unsupported GitHub content', () => {
     const output = generators(profile, process.cwd());
-    expect(Object.keys(output)).toEqual(['hero.svg', 'hero-static.svg']);
+    expect(Object.keys(output)).toEqual(['hero.svg', 'hero-static.svg', 'about.svg', 'talents.svg', 'party-setup.svg', 'projects.svg', 'activity.svg']);
     for (const svg of Object.values(output)) {
       expect(svg).toMatch(/^<svg/); expect(svg).toMatch(/<\/svg>\n$/);
       expect(svg).not.toMatch(/<script\b|foreignObject/i);
@@ -29,8 +29,15 @@ describe('profile generator', () => {
   it('keeps professional content available as readable Markdown', () => {
     const output = readme(profile);
     expect(output).toContain(profile.summary);
-    expect(output).toContain('## Core Stack');
     expect(output).toContain('**Speech-Driven 3D Avatar**');
-    expect(output).not.toContain('Party Setup');
+    expect(output).toContain('**Main DPS:** Python');
+    expect(output).toContain('assets/party-setup.svg');
+  });
+
+  it('references every generated visual including the reduced-motion fallback', () => {
+    const output = readme(profile);
+    for (const name of Object.keys(generators(profile, process.cwd()))) {
+      expect(output).toContain(`assets/${name}`);
+    }
   });
 });
